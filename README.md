@@ -10,7 +10,7 @@ Usage
 --------------------------------------------------
 
     $ rig install git@github.com:DannyBen/gem-rig.git
-    $ mkdir mygem && de mygem
+    $ mkdir mygem && cd mygem
     $ rig build gem
 
 
