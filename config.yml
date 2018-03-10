@@ -1,0 +1,48 @@
+intro: A template rig for ruby gems
+
+after:
+  "Create .gitignore": mv _gitignore .gitignore
+  "Run bundle": bundle
+
+params:
+  gem_name:
+    prompt: "Gem name:"
+    type: text
+    default: my_gem
+
+  gem_name_camel:
+    prompt: "Gem name (camelized):"
+    type: text
+    default: MyGem
+
+  class_name: 
+    prompt: "Primary class name:"
+    type: text
+    default: my_gem_handler
+
+  class_name_camel:
+    prompt: "Primary class name (camelized):"
+    type: text
+    default: MyGemHandler
+
+  description:
+    prompt: "Gem description:"
+    type: text
+    default: Description soon
+
+  bin:
+    prompt: "Does this gem have a CLI?"
+    type: yesno
+    default: yes
+
+  command_name:
+    prompt: "Name of the first CLI subcommand:"
+    type: text
+    default: sample_command
+    condition: bin=yes
+
+  command_name_camel:
+    prompt: "Name of the first CLI subcommand (camelized):"
+    type: text
+    default: SampleCommand
+    condition: bin=yes

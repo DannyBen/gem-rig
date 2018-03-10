@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+require '%{gem_name}'
+
+%{gem_name_camel}::CommandLine.execute ARGV
+
+## Or...
+# begin
+#   %{gem_name_camel}::CommandLine.execute ARGV
+# rescue SomeException => e
+#   puts message
+#   exit 1
+# end

@@ -1,0 +1,23 @@
+%{gem_name}
+
+Usage:
+  %{gem_name} %{command_name} PARAM
+  %{gem_name} (-h|--help|--version)
+
+Commands:
+  %{command_name}
+    Description.
+
+Parameters:
+  PARAM
+    Description.
+
+Options:
+  -h --help
+    Show this screen.
+
+  --version
+    Show version number.
+
+Examples:
+  %{gem_name} %{command_name} example
