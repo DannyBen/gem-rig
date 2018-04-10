@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Commands::Build::%{command_name_camel}Handler do
+describe Commands::%{command_name_camel}::Handler do
   let(:args) {{ 'key' => 'value' }}
   subject { described_class.new args }
 
