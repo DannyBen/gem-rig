@@ -1,21 +1,22 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'date'
-require '%{gem_name}/version'
+require 'tsm-%{gem_name}/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'rigit'
-  s.version     = %{gem_name_camel}::VERSION
+  s.name        = 'tsm-%{gem_name}'
+  s.version     = TSM::%{gem_name_camel}::VERSION
   s.date        = Date.today.to_s
   s.summary     = "%{description}"
   s.description = "%{description}"
   s.authors     = ["Danny Ben Shitrit"]
   s.email       = 'db@dannyben.com'
   s.files       = Dir['README.md', 'lib/**/*.*']
-  s.executables = ["%{gem_name}"]
   s.homepage    = 'https://github.com/dannyben/%{gem_name}'
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.4.0"
+
+  s.metadata['allowed_push_host'] = 'http://nowhere.telesofia.com'
 
   # s.add_runtime_dependency '...', '~> 0.1'
 

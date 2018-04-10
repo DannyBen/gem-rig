@@ -1,4 +1,4 @@
-intro: A template rig for ruby gems
+intro: A template rig for TSM ruby gems
 
 after:
   "Create .gitignore": mv _gitignore .gitignore

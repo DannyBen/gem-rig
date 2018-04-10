@@ -1,11 +1,11 @@
 require 'colsole'
 require 'super_docopt'
 
-require '%{gem_name}/version'
+require 'tsm-%{gem_name}/version'
 
-require '%{gem_name}/commands/%{command_name}'
+require 'tsm-%{gem_name}/commands/%{command_name}'
 
-module Rigit
+module TSM::%{gem_name_camel}
   # Handles command line execution using docopt.
   class CommandLine < SuperDocopt::Base
     version VERSION

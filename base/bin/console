@@ -2,6 +2,8 @@
 
 require "irb"
 require "irb/completion" 
-require "%{gem_name}"
+require "tsm-%{gem_name}"
+
+include TSM::%{gem_name_camel}
 
 IRB.start
