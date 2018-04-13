@@ -1,4 +1,4 @@
-module %{gem_name_camel}::Commands
+module TSM::%{gem_name_camel}::Commands
   module %{command_name_camel}
 
     def %{command_name}

@@ -1,12 +1,12 @@
 require "runfile-tasks"
 require "byebug"
-require_relative 'lib/%{gem_name}'
+require_relative 'lib/tsm-%{gem_name}'
 
 title   "%{gem_name_camel} Developer Toolbelt"
 summary "Runfile tasks for building the %{gem_name_camel} gem"
-version %{gem_name_camel}::VERSION
+version TSM::%{gem_name_camel}::VERSION
 
-RunfileTasks::RubyGems.all '%{gem_name}'
+RunfileTasks::RubyGems.all 'tsm-%{gem_name}'
 RunfileTasks::Testing.rspec
 RunfileTasks::Docs.rdoc
 

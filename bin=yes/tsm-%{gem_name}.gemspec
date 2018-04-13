@@ -1,11 +1,16 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'date'
-require '%{gem_name}/version'
+require 'tsm-%{gem_name}/version'
 
 Gem::Specification.new do |s|
+<<<<<<< HEAD:bin=yes/%{gem_name}.gemspec
   s.name        = '%{gem_name}'
   s.version     = %{gem_name_camel}::VERSION
+=======
+  s.name        = 'tsm-%{gem_name}'
+  s.version     = TSM::%{gem_name_camel}::VERSION
+>>>>>>> e07f7e57ec05ce0ec620f6613a541a5c18823120:bin=yes/tsm-%{gem_name}.gemspec
   s.date        = Date.today.to_s
   s.summary     = "%{description}"
   s.description = "%{description}"
@@ -17,7 +22,9 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.4.0"
 
-  # s.add_runtime_dependency '...', '~> 0.1'
+  s.metadata['allowed_push_host'] = 'http://nowhere.telesofia.com'
+
+  s.add_runtime_dependency 'super_docopt', '~> 0.1'
 
   s.add_development_dependency 'byebug', '~> 9.0'
   s.add_development_dependency 'rdoc', '~> 5.1'

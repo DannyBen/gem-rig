@@ -4,4 +4,6 @@ require "irb"
 require "irb/completion" 
 require "%{gem_name}"
 
+include %{gem_name_camel}
+
 IRB.start
