@@ -4,7 +4,7 @@ require 'date'
 require '%{gem_name}/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'rigit'
+  s.name        = '%{gem_name}'
   s.version     = %{gem_name_camel}::VERSION
   s.date        = Date.today.to_s
   s.summary     = "%{description}"

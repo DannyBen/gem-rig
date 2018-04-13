@@ -5,7 +5,7 @@ require '%{gem_name}/version'
 
 require '%{gem_name}/commands/%{command_name}'
 
-module Rigit
+module %{gem_name_camel}
   # Handles command line execution using docopt.
   class CommandLine < SuperDocopt::Base
     version VERSION
