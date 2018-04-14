@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-require 'tsm-%{gem_name}'
+require '%{gem_name}'
 
-TSM::%{gem_name_camel}::CommandLine.execute ARGV
+%{gem_name_camel}::CommandLine.execute ARGV
 
 ## Or...
 # begin

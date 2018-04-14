@@ -1,11 +1,11 @@
-module TSM::%{gem_name_camel}::Commands
+module %{gem_name_camel}::Commands
   module %{command_name_camel}
 
     def %{command_name}
-      %{command_name_camel}Handler.new(args).execute
+      Handler.new(args).execute
     end
 
-    class %{command_name_camel}Handler
+    class Handler
       attr_reader :args
 
       include Colsole
