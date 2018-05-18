@@ -16,12 +16,12 @@ params:
     default: MyGem
 
   class_name: 
-    prompt: "Primary class name:"
+    prompt: "First class name:"
     type: text
     default: my_gem_handler
 
   class_name_camel:
-    prompt: "Primary class name (camelized):"
+    prompt: "First class name (camelized):"
     type: text
     default: MyGemHandler
 

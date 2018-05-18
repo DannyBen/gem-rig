@@ -1,12 +1,14 @@
 #!/usr/bin/env ruby
 require '%{gem_name}'
+require '%{gem_name}/version'
 
-%{gem_name_camel}::CommandLine.execute ARGV
+runner = MisterBin::Runner.new '%{gem_name}', basedir: __dir__,
+  header: "%{gem_name_camel} #{Madman::VERSION}"
 
-## Or...
-# begin
-#   %{gem_name_camel}::CommandLine.execute ARGV
-# rescue SomeException => e
-#   puts message
-#   exit 1
-# end
+begin
+  exit runner.run ARGV
+rescue => e
+  puts e.backtrace.reverse if ENV['DEBUG']
+  say! "!txtred!#{e.class}: #{e.message}"
+  exit 1
+end
