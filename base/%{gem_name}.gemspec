@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.4.0"
 
-  s.add_runtime_dependency 'mister_bin', '~> 0.2'
+  # s.add_runtime_dependency 'mister_bin', '~> 0.2'
 
   s.add_development_dependency 'byebug', '~> 10.0'
   s.add_development_dependency 'github_changelog_generator', '~> 1.14'
