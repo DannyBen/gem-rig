@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe %{gem_name_camel} do
+describe %{class_name_camel} do
   describe '#method' do
     it "works" do
       # ...
