@@ -3,7 +3,7 @@ require '%{gem_name}'
 require '%{gem_name}/version'
 
 runner = MisterBin::Runner.new '%{gem_name}', basedir: __dir__,
-  header: "%{gem_name_camel} #{Madman::VERSION}"
+  header: "%{gem_name_camel} #{%{gem_name_camel}::VERSION}"
 
 begin
   exit runner.run ARGV
