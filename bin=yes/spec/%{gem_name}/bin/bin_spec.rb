@@ -9,7 +9,7 @@ describe 'bin/%{gem_name}' do
 
   context "on exception" do
     it "errors gracefuly" do
-      expect(`bin/madman command that errors 2>&1`).to match_fixture('cli/exception')
+      expect(`bin/%{gem_name} command that errors 2>&1`).to match_fixture('cli/exception')
     end
   end
 end
