@@ -1,7 +1,4 @@
 require '%{gem_name}'
-require '%{gem_name}/version'
-
-version %{gem_name_camel}::VERSION
 
 help "Write summary here"
 
