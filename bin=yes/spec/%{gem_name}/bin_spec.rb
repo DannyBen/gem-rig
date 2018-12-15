@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'bin/%{gem_name}' do
-  subject { MisterBin::Runner.new '%{gem_name}', basedir: 'bin' }
+  subject { CLI.runner }
 
   it "shows list of commands" do
     expect{ subject.run }.to output_fixture('cli/commands')
