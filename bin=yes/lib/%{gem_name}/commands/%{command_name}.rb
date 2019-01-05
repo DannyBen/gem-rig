@@ -1,8 +1,6 @@
 module %{gem_name_camel}
   module Commands
-    class %{command_name_camel} < MisterBin::Command
-      include Colsole
-
+    class %{command_name_camel}Cmd < Base
       summary "..."
       help "..."
       usage "%{gem_name} %{command_name} ..."
@@ -11,8 +9,8 @@ module %{gem_name_camel}
       param "DIR", "..."
       example "%{gem_name} %{command_name}"
 
-      def run(args)
-        # Implement
+      def run
+        p args
       end
     end
   end
