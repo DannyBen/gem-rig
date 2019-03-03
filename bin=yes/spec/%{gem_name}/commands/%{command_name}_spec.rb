@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe 'bin/%{gem_name}-%{command_name}' do
-  subject { CLI.runner }
+  subject { CLI.router }
 
   context "without arguments" do
     it "shows short usage" do
