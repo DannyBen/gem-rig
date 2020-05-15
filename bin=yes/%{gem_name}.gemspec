@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.required_ruby_version = ">= 2.4.0"
 
-  s.add_runtime_dependency 'mister_bin', '~> 0.3'
-  s.add_runtime_dependency 'colsole', '~> 0.5'
+  s.add_runtime_dependency 'mister_bin', '~> 0.7'
+  s.add_runtime_dependency 'colsole', '~> 0.7'
 end
